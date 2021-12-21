@@ -1,11 +1,16 @@
 import React from "react";
 
-function Flat ({ flat }) {
+function Flat ({ flat, markerShow }) {
+  const updateMarker = () => {
+    markerShow(flat.lat, flat.lng);
+  };
+
   const flatImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(${flat.imageUrl})`;
   return (
     <div
       className="card"
       style={{ backgroundImage: flatImage }}
+      onClick={updateMarker}
     >
       <div className="card-category">
         {`${flat.price} ${flat.priceCurrency}`}

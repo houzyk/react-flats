@@ -2,13 +2,15 @@ import React from "react";
 import GoogleMapReact from 'google-map-react';
 
 // Components
-import Marker from './Marker';
+function Marker () {
+  return <div className="marker" />;
+}
 
 function Googlemap ({ lat, lng }) {
   const defaultProps = {
     center: {
-      lat: lat,
-      lng: lng
+      lat: 10.99835602,
+      lng: 10.99835602
     },
     zoom: 11
   };
