@@ -1,13 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Marker extends Component {
-  constructor (props) {
-    super(props);
-  }
-
-  render () {
-    return (<></>);
-  }
+function Marker () {
+  return (<></>);
 }
 
 export default Marker;
