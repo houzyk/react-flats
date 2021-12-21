@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Googlemap extends Component {
+class Marker extends Component {
   constructor (props) {
     super(props);
   }
@@ -10,4 +10,4 @@ class Googlemap extends Component {
   }
 }
 
-export default Googlemap;
+export default Marker;

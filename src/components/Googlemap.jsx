@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 
-class Marker extends Component {
+class Googlemap extends Component {
   constructor (props) {
     super(props);
   }
 
   render () {
-    return (<></>);
+    return (
+      <div className="map-container">
+      </div>
+    );
   }
 }
 
-export default Marker;
+export default Googlemap;
